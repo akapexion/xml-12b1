@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="file.css" type="text/css"?>
+
+<!DOCTYPE root-element [
+    <!ELEMENT root-element (school)>
+    <!ELEMENT school (student+)>
+    <!ELEMENT student (name, studentID)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT studentID (#PCDATA)>
+
+    <!ATTLIST student id CDATA #IMPLIED>
+
+    <!ENTITY name "Ali">
+]>
+<root-element>
+
+    <school>
+        <student>
+            <name>Ali</name>
+            <studentID>55114</studentID>
+        </student>
+
+        <student id="2">
+            <name>&name;</name>
+            <studentID>55114</studentID>
+        </student>
+    </school>
+
+
+</root-element>

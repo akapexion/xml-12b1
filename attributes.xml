@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office>
+    <employee id="1">
+        <name>Ali</name>
+        <email>ali@gmail.com</email>
+    </employee>
+
+    <employee id="2">
+        <name>Hassan</name>
+        <email>hassan@gmail.com</email>
+    </employee>
+
+    <staff>
+        <age>22</age>
+        <designation>SE</designation>
+    </staff>
+
+    <management>
+        <id>1</id>
+    </management>
+</office>
